@@ -1,0 +1,80 @@
+<!-- inspired by W3 Schools Template -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Potato Microwave Calculator</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+  background-color: antiquewhite;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./potato-background.jpg");
+  min-height: 55%;
+  outline: 2px solid black;
+}
+
+.w3-display-middle {
+    background-color: rgba(222, 184, 135, 0.75);
+    max-width:35%;
+    outline: 2px solid black;
+}
+
+table {
+  border-spacing: 20px 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+</head>
+
+
+<body>
+<!-- Header -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-black" style="font-size:65px">Baked Potato Microwaving Calculator</span>
+  </div>
+</header>
+
+
+<!-- Where the magic happens -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-16"><span class="w3-tag w3-wide">CALCULATE YOUR MICROWAVE TIME</span></h5>
+    <p>Enter the weight of one potato and how many potatoes are being microwaved to see how long your potato should be cooked for on the HIGH setting. Enjoy your perfectly-baked potato!</p>
+    <form>
+        <table>
+            <tr>
+                <th><p>Potato Weight (oz) </p></th>
+                <th><p>Number Made at Once </p></th>
+                <th><p>Microwave Time (min)</p></th>
+                <th><p>Microwave Time (sec)</p></th>
+            </tr>
+            <tr>
+                <th><input type="text" maxlength="4" size="5" id="weightPotato"><br/></th>
+                <th><input type="text" maxlength="4" size="5" id="numPotatoes"><br/></th>
+                <th><p id="finalMin"></p></th>
+                <th><p id="finalSec"></p></th>
+            </tr>
+        </table>
+    </form>
+    
+    </div>
+</div>
+
+
+</body>
+<script src="index.js"></script>
+</html>
+
